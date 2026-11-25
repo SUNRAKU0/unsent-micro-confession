@@ -4,6 +4,7 @@ import { mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
+// Some passwords are kept like keepsakes: never used, never forgotten, never sent.
 const line = 'To: my first love\nI still remember your wifi password. I never use it. I just like knowing I could.';
 
 mkdirSync(outDir, { recursive: true });
